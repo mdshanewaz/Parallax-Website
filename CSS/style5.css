@@ -7,8 +7,9 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: #d1b5ff;
+    background: #000;
 }
+
 #SectImg{
     display: flex;
     justify-content: center;
@@ -92,8 +93,10 @@ body{
     align-items: center;
     width: 400px;
     height: 500px;
-    background: #fff;
+    background: #070c15;
     overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 #reg{   
     position: absolute;   

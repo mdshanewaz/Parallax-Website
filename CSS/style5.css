@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #d1b5ff;
+}
+#SectImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #070c15;
+}
+#BoxImg{
+    position: relative;
+    width: 442px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
+}
+#box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background: url('../IMG/movie.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    resize: none;
+    outline: none;
+    border: none;
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+#BoxImg textarea:nth-child(2){
+    opacity: 1;
+    filter: grayscale(0);
+    width: 100%;
+    border-right: 2px solid #fff;
+    resize: horizontal;
+    background-position: center center;
+    background-size: cover;
+}
+#toggle_btn{
+    -webkit-appearance: none;
+    top: 30px;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #c6c6c6;
+    border-radius: 100px;
+}
+#toggle_btn::before{
+    content: 'Signup';
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(30deg, #f18c18, #09f109);
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+#toggle_btn:checked::before{
+    content: 'Login';
+    left: 50%;
+}
+#toggle_btn:checked + #reg{
+    left: -101%;
+}
+#toggle_btn:checked + #reg + #log{
+    left: 0%;
+}
+#form_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    overflow: hidden;
+}
+#reg{   
+    position: absolute;   
+    width: 100%;
+    height: 400px; 
+    bottom: 0;
+    
+}
+#log{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    left: 101%;
+    
+}
+.inpt-grup{
+    border-radius: 100px;
+}
+#submit_btn{
+    background: linear-gradient(30deg, #f18c18, #09f109);
+    border-radius: 100px;
+    border: 1px solid #fff;
+}
+@media(max-width: 420px){
+    #BoxImg{
+        width: 300px;
+    }
+    #form_container{
+        width: 350px;
+    }
+}

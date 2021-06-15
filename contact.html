@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <link rel="shortcut icon" href="IMG/fav.png" type="image/x-icon">
+    <title>Contact Parallax Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style5.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="main">
+            <div class="container" id="menu">
+                <a class="navbar-brand fs-2 fw-bold" id="logo" href="contact.html"> 
+                    <span>CONTACT</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NAV">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="NAV">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2"><a class="nav-link" id="nav-a" href="index.html">HOME</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" id="nav-activate" href="about.html">ABOUT</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" id="nav-a" href="work.html">WORK</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" id="nav-a" href="service.html">SERVICE</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" id="nav-a" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+    </header>
+
+    <section id="SectImg">
+        <div class="container" id="BoxImg">
+            <textarea id="box" readonly></textarea>
+            <textarea id="box" readonly></textarea>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" id="form_container" >
+
+            <input class="btn" type="checkbox" name="" id="toggle_btn">
+
+            <div class="bg-danger px-4" id="reg">
+                <form action="">
+                    <div class="form-group mt-5">
+                        <input class="form-control inpt-grup" type="text" placeholder="User Name">
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control inpt-grup" type="email" placeholder="Email">
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control inpt-grup" type="password" placeholder="Password">
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control inpt-grup" type="password" placeholder="Re-write Password">
+                    </div>
+                    <div class="form-group mt-5 text-center">
+                        <input class="btn bg-light ms-auto text-light fw-bold px-5" id="submit_btn" type="submit" value="SIGN UP">
+                    </div>
+                </form>
+            </div>
+
+            <div class="bg-success px-3" id="log">
+                <form action="">
+                    <div class="form-group mt-5">
+                        <input class="form-control inpt-grup" type="email" placeholder="Email">
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control inpt-grup" type="password" placeholder="Password">
+                    </div>
+                    <div class="form-group mt-5 text-center">
+                        <input class="btn bg-light ms-auto text-light fw-bold px-5" id="submit_btn" type="submit" value="LOGIN">
+                    </div>
+                </form>
+            </div>
+
+        </div>    
+    </section>
+
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <p class="text-center fw-bold my-auto py-3">CopyRight: &copy; All rights preserved to Newaz</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript">
+		var x = document.getElementById("reg");
+		var y = document.getElementById("log");
+		var z = document.getElementById("btn_color");
+		
+		function login(){
+			x.style.left ="-400px";
+			y.style.left ="350px";
+			z.style.left ="115px";
+		}
+		function register(){
+			x.style.left ="350px";
+			y.style.left ="-400px";
+			z.style.left ="0px";
+		}
+	</script>
+	
+	
+</body>
+</html>
